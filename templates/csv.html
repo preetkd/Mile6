@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV file</title>
+</head>
+<body>
+
+<div>
+    <label for="inp_url">URL Input:</label><br>
+    <textarea type="text" id="inp_url" name="inp_url">{{inp_url}}</textarea><br>
+</div>
+<div>
+    <label for="op_csv">CSV fetched:</label>
+    <textarea name="op_csv" id="op_csv" placeholder="Post content">{{csv}}</textarea><br>
+    <button onclick="location.href = '/downloadCSV';" id="myButton" >Download</button>
+</div>
+
+</body>
+</html>

@@ -6,15 +6,17 @@
 </head>
 <body>
 
-<form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
+<form method = "post">
+<div>
+    <label for="inp_url">URL Input:</label><br>
+    <input type="text" id="inp_url" name="inp_url"
+           placeholder="Enter the url"
+           value=""/><br>
+    <button type="submit"> Submit </button>
+</div>
 </form>
-<button type="button" onclick="hello_world()"> Submit </button>
+
 <div style="width: 100%; height: 100%" id="entryContainer"> All of the entries:
     {{variable}} </div>
-
 </body>
 </html>
