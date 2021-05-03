@@ -52,6 +52,16 @@ def return_csv(path):
 
     LoginSol.to_csv(upath, index=False)
 
+    # getting  filename again
+
+    filname = upath
+    fup = re.split('/', filname)
+    filenm = (re.split('\.', fup[6]))
+    fileup = filenm[0]
+
+    return fileup
+
+
 #return_csv('https://www.dropbox.com/s/5lqxn1bl55cuzwu/363500.csv?dl=1')
 #upath =
 #FileDwnLdFun(path='https://www.dropbox.com/s/8stypjhl2y6ceul/sampleBankAcctInput.csv?dl=1')
